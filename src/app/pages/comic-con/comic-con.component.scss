@@ -131,7 +131,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/assets/bg-home.png') center / cover no-repeat;
+  background: url('assets/bg-home.png') center / cover no-repeat;
   opacity: 0.2;
   mix-blend-mode: hard-light;
   border-radius: 20px;
@@ -286,8 +286,8 @@
   overflow: hidden;
   z-index: 1;
 
-  -webkit-mask: url('/assets/Vector 4.png') center / 100% 100% no-repeat;
-  mask: url('/assets/Vector 4.png') center / 100% 100% no-repeat;
+  -webkit-mask: url('assets/Vector 4.png') center / 100% 100% no-repeat;
+  mask: url('assets/Vector 4.png') center / 100% 100% no-repeat;
 }
 
 .hero-character-bg {
