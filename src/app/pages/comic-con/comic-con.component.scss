@@ -1,0 +1,310 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  background: #000000;
+}
+
+.comic-con-header {
+  width: 100%;
+  padding: 55px 110px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  background: #000000;
+  margin-bottom: 0;
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  img {
+    display: block;
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+.brand-title {
+  width: 120px;
+  height: 53px;
+  color: #facc15;
+  font-family: "Bangers", cursive;
+  font-weight: 400;
+  font-size: 25.3px;
+  line-height: 26.34px;
+  letter-spacing: 2.11px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  width: 826px;
+  height: 75px;
+  background: #090909;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 0 28px;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+
+  &.active {
+    color: #facc15;
+    font-weight: 600;
+  }
+}
+
+.buy-tickets-btn {
+  width: 188px;
+  height: 61px;
+  border-radius: 10px;
+  border: 1px solid #facc15;
+  background: transparent;
+  color: #facc15;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+
+  &:hover {
+    background: linear-gradient(90deg, #facc15 0%, #f97316 100%);
+    color: #000000;
+    border-color: transparent;
+  }
+}
+
+.hero-section {
+  width: 100%;
+  padding: 0 60px 0;
+  background: #000000;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1240px;
+  height: 653px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  background: #000000;
+  padding: 48px 70px;
+  box-sizing: border-box;
+}
+
+.hero-content::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/assets/bg-home.png') center / cover no-repeat;
+  opacity: 0.2;
+  mix-blend-mode: hard-light;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.event-badge {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 195px;
+  height: 36px;
+  padding: 0 18px;
+  background: #facc15;
+  border: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 0 #000000;
+}
+
+.event-badge-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  flex-shrink: 0;
+
+  svg {
+    width: 16px !important;
+    height: 16px !important;
+    fill: none !important;
+    stroke: #000000 !important;
+    stroke-width: 1.75 !important;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+.event-badge-text {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 12.5px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  position: relative;
+  z-index: 2;
+  margin: 22px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.hero-title-line {
+  display: block;
+  font-family: "Bangers", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 114.85px;
+  line-height: 123.73px;
+  letter-spacing: 2.39px;
+  color: #ffd600;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow:
+    4.79px 4.79px 0 #000000,
+    7.18px 7.18px 0 #ff7a00;
+}
+
+.hero-subtitle {
+  position: relative;
+  z-index: 2;
+  margin: 8px 0 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20.62px;
+  line-height: 1.35;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.hero-meta {
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero-meta-icon {
+  width: 24px;
+  height: 24px;
+  color: #facc15;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  svg {
+    width: 24px !important;
+    height: 24px !important;
+    stroke: #facc15 !important;
+    fill: none !important;
+    stroke-width: 2.5 !important;
+  }
+}
+
+.hero-character-wrap {
+  position: absolute;
+  top: 110px;
+  right: 86px;
+  width: 470px;
+  height: 500px;
+  z-index: 2;
+}
+
+.hero-character-vector {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-character-bg-mask {
+  position: absolute;
+  inset: 22px;
+  overflow: hidden;
+  z-index: 1;
+
+  -webkit-mask: url('/assets/Vector 4.png') center / 100% 100% no-repeat;
+  mask: url('/assets/Vector 4.png') center / 100% 100% no-repeat;
+}
+
+.hero-character-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-character-man {
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+  width: 760px;
+  height: 600px;
+  object-fit: contain;
+  z-index: 2;
+  pointer-events: none;
+}

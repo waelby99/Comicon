@@ -1,3 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
-@import 'variables';
-@import 'mixins';   
+/* Reset de base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Inter", "Poppins", "Segoe UI", sans-serif;
+  background: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Variables globales */
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #0d0d0d;
+  --bg-card: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --border-color: #1f1f1f;
+}

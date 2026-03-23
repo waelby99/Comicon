@@ -1,0 +1,89 @@
+<header class="comic-con-header">
+  <div class="brand-block">
+    <div class="header-logo">
+      <img src="assets/comicon.png" alt="Comic Con logo" />
+    </div>
+
+    <div class="brand-title">
+      BAHRAIN COMIC CON
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    @for (item of navItems; track item.path) {
+      <a
+        class="nav-link"
+        [class.active]="item.active"
+        [href]="item.path"
+      >
+        {{ item.label }}
+      </a>
+    }
+  </nav>
+
+  <button class="buy-tickets-btn" type="button">
+    Buy Tickets
+  </button>
+</header>
+
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="event-badge">
+      <lucide-icon
+  class="event-badge-icon"
+  [img]="starIcon">
+</lucide-icon>
+
+      <span class="event-badge-text">OFFICIAL EVENT</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="hero-title-line">BAHRAIN</span>
+      <span class="hero-title-line">COMIC CON</span>
+    </h1>
+    <p class="hero-subtitle">
+  The Biggest Pop Culture Event in the Middle East
+</p>
+
+<div class="hero-meta">
+  <div class="hero-meta-item">
+    <lucide-icon
+      class="hero-meta-icon"
+      [img]="mapPinIcon">
+    </lucide-icon>
+    <span>Bahrain International Circuit</span>
+  </div>
+
+  <div class="hero-meta-item">
+    <lucide-icon
+      class="hero-meta-icon"
+      [img]="calendarIcon">
+    </lucide-icon>
+    <span>12–13 April 2025</span>
+  </div>
+</div>
+
+<div class="hero-character-wrap">
+  <img
+    class="hero-character-vector"
+    src="assets/vector-4.png"
+    alt="Character shape"
+  />
+
+  <div class="hero-character-bg-mask">
+    <img
+      class="hero-character-bg"
+      src="assets/bg-home.png"
+      alt="Background"
+    />
+  </div>
+
+  <img
+    class="hero-character-man"
+    src="assets/man-preview.png"
+    alt="Character"
+  />
+</div>
+
+  </div>
+</section>
