@@ -109,15 +109,15 @@
 
 .hero-section {
   width: 100%;
-  padding: 0 60px 0;
+  padding: 0 110px 0;
   background: #000000;
+  box-sizing: border-box;
 }
 
 .hero-content {
   width: 100%;
-  max-width: 1240px;
   height: 653px;
-  margin: 0 auto;
+  margin: 0;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -131,7 +131,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('assets/bg-home.png') center / cover no-repeat;
+  background: url('/assets/bg-home.png') center / cover no-repeat;
   opacity: 0.2;
   mix-blend-mode: hard-light;
   border-radius: 20px;
@@ -263,48 +263,44 @@
 
 .hero-character-wrap {
   position: absolute;
-  top: 110px;
-  right: 86px;
-  width: 470px;
+  top: 105px;
+  right: 70px;
+  width: 500px;
   height: 500px;
   z-index: 2;
 }
 
-.hero-character-vector {
+.hero-character-vector-2,
+.hero-character-vector-3,
+.hero-character-man {
   position: absolute;
+  display: block;
+}
+
+.hero-character-vector-2 {
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  z-index: 3;
-  pointer-events: none;
-}
-
-.hero-character-bg-mask {
-  position: absolute;
-  inset: 22px;
-  overflow: hidden;
   z-index: 1;
-
-  -webkit-mask: url('assets/Vector 4.png') center / 100% 100% no-repeat;
-  mask: url('assets/Vector 4.png') center / 100% 100% no-repeat;
 }
 
-.hero-character-bg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.hero-character-vector-3 {
+  top: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  object-fit: contain;
+  z-index: 2;
 }
 
 .hero-character-man {
-  position: absolute;
   left: 50%;
-  bottom: -18px;
+  bottom: -20px;
   transform: translateX(-50%);
   width: 760px;
   height: 600px;
   object-fit: contain;
-  z-index: 2;
+  z-index: 3;
   pointer-events: none;
 }
