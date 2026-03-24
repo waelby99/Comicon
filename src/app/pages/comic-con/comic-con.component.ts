@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { LucideAngularModule, Star,MapPin, CalendarDays } from 'lucide-angular';
-import { COMIC_CON_NAV_ITEMS } from '../../data/navbar.data';
+import { LucideAngularModule, Star, MapPin, CalendarDays, Ticket, Users } from 'lucide-angular';import { COMIC_CON_NAV_ITEMS } from '../../data/navbar.data';
 import { NavItem } from '../../models/nav-item.model';
 
 @Component({
@@ -15,4 +14,6 @@ export class ComicConComponent {
   readonly starIcon = Star;
   readonly mapPinIcon = MapPin;
   readonly calendarIcon = CalendarDays;
+  readonly ticketIcon = Ticket;
+  readonly usersIcon = Users;
 }
